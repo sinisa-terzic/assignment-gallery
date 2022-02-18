@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery-Flex</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --color: #8f8f8f;
+            --color-white: #fff;
+            --bg-color: #6ba2d9;
+            --link-color: #607d8b;
+            --gap: 60px;
+            --num-cols: 5;
+        }
+
+        #grid {
+            display: flex;
+            gap: var(--gap);
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        .box {
+            flex-basis: calc(20% - 48px);
+        }
+
+        @media screen and (min-width: 767px) and (max-width: 1023px) {
+            .box {
+                flex-basis: calc(33.33% - 40px);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <h1>Flex &#45; Gallery Heading</h1>
+        <div id="nav">
+            <a href="index.html" class="">Flex Gallery</a>
+            <a href="index-grid.html" class="">Grid Gallery</a>
+        </div>
+    </div>
+    <div id="grid">
+        <div id="a" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="b" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="c" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="d" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="e" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="f" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="g" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="h" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="i" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+        <div id="j" class="box">
+            <figure>
+                <img src="placeholder-image.png" alt="#">
+                <figcaption>Image Title</figcaption>
+            </figure>
+        </div>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquid tenetur? Nisi blanditiis esse,
+        dicta
+        beatae pariatur magnam quia, eveniet asperiores molestias numquam perspiciatis aut rem est expedita, quam
+        aliquam.00. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquid tenetur? Nisi
+        blanditiis
+        esse, dicta beatae pariatur magnam quia, eveniet asperiores molestias numquam perspiciatis aut rem est
+        expedita,
+        quam aliquam.00. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquid tenetur? Nisi
+        blanditiis esse, dicta beatae pariatur magnam quia, eveniet asperiores molestias numquam perspiciatis aut
+        rem
+        est expedita, quam aliquam.00. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, aliquid
+        tenetur? Nisi blanditiis esse, dicta beatae pariatur magnam quia, eveniet asperiores molestias numquam
+        perspiciatis aut rem est expedita, quam aliquam.00</p>
+
+</body>
+
+</html>
